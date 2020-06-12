@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Panels</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- 加入jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- accordion 摺疊收合面板 -->
+        <section >
+            <h2>Accordion 摺疊收合面板</h2>
+            <ul class="accordion">
+                <li>
+                    <button class="accordion-control">Title01</button>
+                    <div class="accordion-panel">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion-control">Title02</button>
+                    <div class="accordion-panel">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion-control">Title03</button>
+                    <div class="accordion-panel">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Tab panels 頁籤面板 -->
+        <section>
+            <h2>Tab panels 頁籤面板</h2>
+            <div class="tabs">
+                <ul class="tab-list">
+                    <li class="active">
+                        <a class="tab-control" href="#tab-1">
+                            <h3>TITLE1</h3>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="tab-control" href="#tab-2">
+                            <h3>TITLE2</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tab-control" href="#tab-3">
+                            <h3>TITLE3</h3>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-panel active" id="tab-1">
+                    <p>
+                        001Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                    </p>
+                </div>
+                <div class="tab-panel" id="tab-2">
+                    <p>
+                        002Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                    </p>
+                </div>
+                <div class="tab-panel" id="tab-3">
+                    <p>
+                        003Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="/accordion.js"></script>    
+    <script src="/tab.js"></script>
+</body>
+</html>
