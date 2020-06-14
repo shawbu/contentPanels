@@ -1,4 +1,4 @@
-var modal = (function() {                         // Declare modal object
+var modal = (function() {                         // Declare(宣告) modal object
 
     var $window = $(window);                        // Store the window
     var $modal = $('<div class="modal"/>');         // Create markup for modal
@@ -14,7 +14,7 @@ var modal = (function() {                         // Declare modal object
   
     return {                                        // Add code to modal
       center: function() {                          // Define center() method
-        // Calculate distance from top and left of window to center the modal
+        // Calculate distance(距離) from top and left of window to center the modal
         var top = Math.max($window.height() - $modal.outerHeight(), 0) / 2;
         var left = Math.max($window.width() - $modal.outerWidth(), 0) / 2;
         $modal.css({                                // Set CSS for the modal
@@ -24,8 +24,13 @@ var modal = (function() {                         // Declare modal object
       },
       open: function(settings) {                     // Define open() method
         $content.empty().append(settings.content);   // Set new content of modal
-  
-        $modal.css({                                 // Set modal dimensions
+        
+        $content.append(
+            '<div class="content-text">888888</div>'+
+            '<div class="content-text">42131388</div>'
+            );
+
+        $modal.css({                                 // Set modal dimensions(尺寸)
           width: settings.width || 'auto',           // Set width
           height: settings.height || 'auto'          // Set height
         }).appendTo('body');                         // Add it to the page

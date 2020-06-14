@@ -11,3 +11,42 @@
 .tab-panel.active{
     display: block;
 }
+
+/* 懸浮視窗 */
+.modal{
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(186, 144, 228);
+}
+
+.content-text{
+    background-color: rgb(202, 126, 126);
+}
+
+
+/* photo viewer  */
+#photo-viewer{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+#photo-viewer.is-loading:after{
+    content: '123';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#photo-viewer img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+.tumb-icon{
+    width: 50px;
+    height: 50px;
+}
+a.active{
+    opacity: 0.3;
+}
