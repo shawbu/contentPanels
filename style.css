@@ -93,11 +93,10 @@ li.active{
 .modal-share:hover{
     color: #fff;
     background-color: rgba(248, 0, 0, 0.7);
-    
 }
 .modal-img{
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
 }
 .modal{
     position: absolute;
