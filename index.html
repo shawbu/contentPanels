@@ -69,48 +69,50 @@
                 </ul>
                 <div class="tab-panel active" id="tab-1">
                     <p>
-                        001Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                        001Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid volupt0101atibus veniam maxime rerum architec0111111to nihil?
                     </p>
                 </div>
                 <div class="tab-panel" id="tab-2">
                     <p>
-                        002Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                        002Lorem ipsum dolor sit am00022222200000222et consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliqu0202id voluptatibus veniam maxime rerum architecto nihil?
                     </p>
                 </div>
                 <div class="tab-panel" id="tab-3">
                     <p>
-                        003Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime rerum architecto nihil?
+                        003Lorem ipsum dolor sit amet consectetur, adipi0033333330030303003030sicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime r03030erum architecto nihil?
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- modal script 懸浮視窗 -->
-        <section>
+        <section class="sec-modal">
             <h2>modal script 懸浮視窗</h2>
-            <div id="share">
-                <a>
-                    視窗按鈕
-                </a>
+            
+            <div class="modal-container">
+                <div id="share" class="modal-share">
+                    <a>
+                        SHARE
+                    </a>
+                </div>
+                <img src="/image/001.jpg" alt="content" class="modal-img">
             </div>
-            <div>
-                <img src="/contentPanels/image/001.jpg" alt="content">
-            </div>
+            
         </section>
 
         <!-- photo viewer 相片檢視器 -->
         <section>
             <h2>photo viewer</h2>
             <div id="photo-viewer"></div>
-            <div id="thumbnails">
-                <a href="/contentPanels/image/011.jpg" class="thumb" title="item01">
-                    <img src="/contentPanels/image/014.svg" class="tumb-icon" alt="001">
+            <div id="thumbnails" class="thumbnails">
+                <a href="/image/011.jpg" class="thumb" title="item01">
+                    <img src="/image/014.svg" class="tumb-icon" alt="001">
                 </a>
-                <a href="/contentPanels/image/012.jpg" class="thumb" title="item02">
-                    <img src="/contentPanels/image/015.svg" class="tumb-icon" alt="002">
+                <a href="/image/012.jpg" class="thumb" title="item02">
+                    <img src="/image/015.svg" class="tumb-icon" alt="002">
                 </a>
-                <a href="/contentPanels/image/010.jpg" class="thumb" title="item03">
-                    <img src="/contentPanels/image/016.svg" class="tumb-icon" alt="003">
+                <a href="/image/010.jpg" class="thumb" title="item03">
+                    <img src="/image/016.svg" class="tumb-icon" alt="003">
                 </a>
             </div>
         </section>
@@ -123,7 +125,7 @@
                 <div class="container001">
                     <div class="sec05-pic">
                         <div class="container-content">
-                            <img src="/contentPanels/image/011.jpg">
+                            <img src="/image/011.jpg">
                             <div class="text05-content">
                                 <div class="text05">
                                     <p>01多肉植物又被稱作肉質植物，種類多樣，主要生長於沙漠及海岸乾旱地區。</p>
@@ -148,17 +150,17 @@
                 <div class="slide-viewer">
                     <div class="slide-group">
                         <div class="slide slide-1">
-                            <img src="/contentPanels/image/020.jpg" alt="cat01">
+                            <img src="/image/020.jpg" alt="cat01">
                             
                         </div>
                         <div class="slide slide-2">
-                            <img src="/contentPanels/image/021.jpg" alt="cat02">
+                            <img src="/image/021.jpg" alt="cat02">
                         </div>
                         <div class="slide slide-3">
-                            <img src="/contentPanels/image/022.jpg" alt="bird not cat">
+                            <img src="/image/022.jpg" alt="bird not cat">
                         </div>
                         <div class="slide slide-4">
-                            <img src="/contentPanels/image/023.jpg" alt="cat03">
+                            <img src="/image/023.jpg" alt="cat03">
                         </div>
                     </div>
                 </div>
@@ -168,9 +170,9 @@
     </main>
     <script src="/accordion.js"></script>    
     <script src="/tab.js"></script>
-    <script src="/contentPanels/modal-init.js"></script>
-    <script src="/contentPanels/modal-window.js"></script>
-    <script src="/contentPanels/photo-viewer.js"></script>
-    <script src="/contentPanels/slider.js"></script>
+    <script src="/modal-init.js"></script>
+    <script src="/modal-window.js"></script>
+    <script src="/photo-viewer.js"></script>
+    <script src="/slider.js"></script>
 </body>
 </html>

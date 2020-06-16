@@ -1,37 +1,137 @@
 *{
     font-family: '微軟正黑體';
+    text-align: center;
+    font-size: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 1rem;
 }
 section{
     margin:0 0 3rem 0;
 }
+
+/* accordion */
+.accordion{
+   background-color: #8f9c63;
+   padding: 1rem;
+  
+}
+.accordion-control{
+    background-color: rgb(218, 152, 152);
+    border: none;
+    padding: 0.2rem;
+    transition:0.5s;
+}
+.accordion-control:hover{
+    color: #fff;
+}
 .accordion-panel{
     display: none;
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #c1d188;
+    padding: 1rem;
 }
 
+/* tab panels */
+.tab-list{
+    display: flex;
+    justify-content: center;
+}
+.tab-list>li{
+    margin: 0.5rem 0.1rem;
+    background-color: #d6c2a3;
+    padding: 0.5rem;
+    border-radius: 30% 0 0 0;
+}
+.tab-control{
+    text-decoration: none;
+    color: #ed8e6c;
+    transition:0.5s;
+}
+.tab-control:hover{
+    color: #fff;
+}
 .tab-panel{
     display: none;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(236, 219, 173);
+    padding: 1rem;
 }
 .tab-panel.active{
     display: block;
 }
+li.active{
+    background-color: rgb(236, 219, 173);
+    margin: 0.5rem 0.5rem 0;
+}
 
 /* 懸浮視窗 */
+.sec-modal{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(189, 189, 189);
+}
+.modal-container{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem;
+}
+.modal-share{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background-color: rgba(248, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 60%;
+    transition:0.5s;
+}
+.modal-share:hover{
+    color: #fff;
+    background-color: rgba(248, 0, 0, 0.7);
+    
+}
+.modal-img{
+    object-fit: cover;
+    width: 100%;
+}
 .modal{
     position: absolute;
     z-index: 1000;
     background-color: rgb(186, 144, 228);
+    padding: 1rem;
 }
-
-.content-text{
+.modal-content{
+    background-color: #fff;
+    height: 90%;
+}
+.modal-content-text{
     background-color: rgb(202, 126, 126);
 }
-
+.modal-close{
+    margin:0.5rem ;
+    background-color: rgb(218, 152, 152);
+    border: none;
+    padding: 0.3rem;
+    transition:0.5s;
+}
+.modal-close:hover{
+    color: #fff;
+    
+}
 
 /* photo viewer  */
 #photo-viewer{
     position: relative;
     height: 300px;
     overflow: hidden;
+
+    background-color: rgb(202, 144, 144);
+    margin-bottom: 1rem;
 }
 #photo-viewer.is-loading:after{
     content: '123';
@@ -39,12 +139,17 @@ section{
     top: 0;
     right: 0;
 }
+
 #photo-viewer img{
     position: absolute;
     max-width: 100%;
     max-height: 100%;
     top: 50%;
-    left: 50%;
+    left: 50%; 
+}
+.thumb{
+    text-decoration: none;
+    margin: 0 1rem;
 }
 .tumb-icon{
     width: 50px;
@@ -129,15 +234,20 @@ a.active{
 }
 
 .slide-buttons {
-    text-align: center;}
+    text-align: center;
+}
   
   .slide-btn {
     border: none;
     background: none;
-    color: #000;
+    color: rgb(102, 0, 0);
     font-size: 200%;
-    line-height: 0.5em;}
+  
+    outline: none;
+    
+}
   
   .slide-btn.active, .slide-btn:hover {
     color: #ed8e6c;
-    cursor: pointer;}
+    cursor: pointer; /*鼠標的圖形*/
+}

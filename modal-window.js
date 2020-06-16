@@ -24,10 +24,10 @@ var modal = (function() {                         // Declare(宣告) modal objec
       },
       open: function(settings) {                     // Define open() method
         $content.empty().append(settings.content);   // Set new content of modal
-        
+        // 加入懸浮視窗的內容
         $content.append(
-            '<div class="content-text">888888</div>'+
-            '<div class="content-text">42131388</div>'
+            '<div class="modal-content-text">懸浮視窗的內容在此</div>'+
+            '<div class="modal-content-text">888888888</div>'
             );
 
         $modal.css({                                 // Set modal dimensions(尺寸)
