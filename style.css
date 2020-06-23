@@ -3,6 +3,9 @@
     text-align: center;
     font-size: 1rem;
 }
+body {
+    background-color: grey;
+}
 h2{
     font-size: 2.5rem;
     margin: 1rem;
@@ -256,4 +259,33 @@ a.active{
   .slide-btn.active, .slide-btn:hover {
     color: #ed8e6c;
     cursor: pointer; /*鼠標的圖形*/
+}
+
+
+
+.my-slick {
+    /* display: flex; */
+    position: relative;
+    left: 100px;
+    width: 80%;
+    height: 320px;
+    border: 2px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.slick-item {
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+    background-color: grey;
+    color: white;
+}
+
+.abc{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(117, 74, 74);
+    padding: 10rem;
+    position: relative;
 }

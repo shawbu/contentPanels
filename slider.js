@@ -74,3 +74,4 @@ $('.slider').each(function() {              // For every slider
     // Trigger
     advance();                          // Script is set up, advance() to move it
   });
+

@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Panels</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <!-- 加入jQuery CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <header>
 
     </header>
     <main>
         <!-- accordion 摺疊收合面板 -->
-        <section >
+        <section>
             <h2>Accordion 摺疊收合面板</h2>
             <ul class="accordion">
                 <li>
                     <button class="accordion-control">Title01</button>
                     <div class="accordion-panel">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti?
+                            Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint
+                            aperiam exercitationem recusandae saepe.
                         </p>
                     </div>
                 </li>
@@ -31,7 +38,9 @@
                     <button class="accordion-control">Title02</button>
                     <div class="accordion-panel">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti?
+                            Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint
+                            aperiam exercitationem recusandae saepe.
                         </p>
                     </div>
                 </li>
@@ -39,7 +48,9 @@
                     <button class="accordion-control">Title03</button>
                     <div class="accordion-panel">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti? Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint aperiam exercitationem recusandae saepe.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae eos numquam deleniti?
+                            Distinctio soluta eius illum voluptate, voluptatem mollitia ut assumenda eos iusto, id sint
+                            aperiam exercitationem recusandae saepe.
                         </p>
                     </div>
                 </li>
@@ -69,17 +80,23 @@
                 </ul>
                 <div class="tab-panel active" id="tab-1">
                     <p>
-                        001Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid volupt0101atibus veniam maxime rerum architec0111111to nihil?
+                        001Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo temporibus tenetur
+                        tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid
+                        volupt0101atibus veniam maxime rerum architec0111111to nihil?
                     </p>
                 </div>
                 <div class="tab-panel" id="tab-2">
                     <p>
-                        002Lorem ipsum dolor sit am00022222200000222et consectetur, adipisicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliqu0202id voluptatibus veniam maxime rerum architecto nihil?
+                        002Lorem ipsum dolor sit am00022222200000222et consectetur, adipisicing elit. Labore illo
+                        temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti
+                        aliqu0202id voluptatibus veniam maxime rerum architecto nihil?
                     </p>
                 </div>
                 <div class="tab-panel" id="tab-3">
                     <p>
-                        003Lorem ipsum dolor sit amet consectetur, adipi0033333330030303003030sicing elit. Labore illo temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti aliquid voluptatibus veniam maxime r03030erum architecto nihil?
+                        003Lorem ipsum dolor sit amet consectetur, adipi0033333330030303003030sicing elit. Labore illo
+                        temporibus tenetur tempora dolore, similique sunt magni molestiae hic ipsa modi impedit deleniti
+                        aliquid voluptatibus veniam maxime r03030erum architecto nihil?
                     </p>
                 </div>
             </div>
@@ -88,7 +105,7 @@
         <!-- modal script 懸浮視窗 -->
         <section class="sec-modal">
             <h2>modal script 懸浮視窗</h2>
-            
+
             <div class="modal-container">
                 <div id="share" class="modal-share">
                     <a>
@@ -97,7 +114,7 @@
                 </div>
                 <img src="./image/001.jpg" alt="content" class="modal-img">
             </div>
-            
+
         </section>
 
         <!-- photo viewer 相片檢視器 -->
@@ -143,7 +160,7 @@
             </div>
         </section>
 
-        <!-- slider 滑動面板 -->
+        <!-- slider 滑動面板 
         <section>
             <h2>slider 滑動面板</h2>
             <div class="slider"> 
@@ -165,15 +182,78 @@
                 </div>
                 <div class="slide-buttons"></div>
             </div>
-        </section>
- 
+        </section>-->
+
+
+        <script>
+            $(document).ready(function () {
+                $('.my-slick').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 1500
+                });
+
+
+                $('.center').slick({
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                            }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+
+            });
+
+           
+        </script>
+                
+        <div class="center">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
+
+        <div class="abc">
+            <div class="center">
+                <div class="slick-item">first</div>
+                <div class="slick-item">second</div>
+                <div class="slick-item">third</div>
+                <div class="slick-item">fourth</div>
+                <div class="slick-item">fifth</div>
+                <div class="slick-item">sixth</div>
+            </div>
+
+        </div>
+      
+
     </main>
-    <script src="https://shawbu.github.io/contentPanels/accordion.js"></script>    
+    <script src="https://shawbu.github.io/contentPanels/accordion.js"></script>
     <script src="https://shawbu.github.io/contentPanels/tab.js"></script>
     <script src="https://shawbu.github.io/contentPanels/modal-init.js"></script>
     <script src="https://shawbu.github.io/contentPanels/modal-window.js"></script>
     <script src="https://shawbu.github.io/contentPanels/photo-viewer.js"></script>
     <script src="slider.js"></script>
-    
+
 </body>
+
 </html>
